@@ -13,7 +13,7 @@ public class Test_06 extends BoardGame06{
 		//如果不使用super调用父类的构造函数，
 		//则编译器就不会知道你要调用哪一个父类的构造函数，
 		//所以需要在子类的构造函数中显示的调用。
-		//super(11);
+		super(11);
 		System.out.println("Test_06 constructor");
 	}
 	public static void main(String[] args) {
