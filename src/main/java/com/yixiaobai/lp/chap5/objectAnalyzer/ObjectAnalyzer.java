@@ -7,13 +7,14 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 
 /**
- * 
+ * 通过toString()方法查看任意对象内部的信息。
  * @author yixiaobai
  *
  */
 public class ObjectAnalyzer {
 
 	private ArrayList<Object> visited = new ArrayList<>();
+	
 	public String toString(Object obj) {
 		if(obj == null) {
 			return  "null";
