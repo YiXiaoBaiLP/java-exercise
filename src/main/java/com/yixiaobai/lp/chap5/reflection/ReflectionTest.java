@@ -11,7 +11,9 @@ import java.util.Scanner;
  * @author yixiaobai
  *
  */
+@SuppressWarnings({"rawtypes", "resource"})
 public class ReflectionTest {
+	
 	public static void main(String[] args) {
 		
 		// read class name from command line args or user input
@@ -34,7 +36,7 @@ public class ReflectionTest {
 			// Modifier.toString()将int数字使用 & 操作符进行判断具体的操作符
 			String modifiers = Modifier.toString(clazz.getModifiers());
 			if(modifiers.length() > 0 ) {
-				System.out.println(modifiers + " ");
+				System.out.print(modifiers + " ");
 			}
 			// 输入类的全路径
 			System.out.print("class " + name);
@@ -43,7 +45,7 @@ public class ReflectionTest {
 				// 输出当前类继承自哪个类的全路径
 				System.out.print(" extends " + superClazz.getName());
 			}
-			System.out.print("\n{\n");
+			System.out.println(" {\n");
 			printConstructors(clazz);
 			System.out.println();
 			printMethods(clazz);
@@ -72,7 +74,7 @@ public class ReflectionTest {
 			System.out.print(" ");
 			String modifiers = Modifier.toString(c.getModifiers());
 			if(modifiers.length() > 0) {
-				System.out.print(modifiers + "  ");
+				System.out.print(modifiers + " ");
 			}
 			System.out.print(name + "(");
 			
@@ -82,6 +84,7 @@ public class ReflectionTest {
 				if(j > 0) {
 					System.out.print(", ");
 				}
+				// 获取参数类型名称
 				System.out.print(parameteTypes[j].getName());
 			}
 			System.out.println(");");
