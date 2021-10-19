@@ -2,10 +2,9 @@ package com.yixiaobai_lp.access;
 
 /**
  * 
- *  子类继承父类，调用 protected 修饰的方法
- * 
+ * 子类继承父类，调用 protected 修饰的方法
  * @author liupeng
- *
+ * @version 1.0.0
  */
 
 public class ChocolateChip2 extends Cookie{

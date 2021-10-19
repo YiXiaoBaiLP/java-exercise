@@ -1,14 +1,12 @@
 package com.yixiaobai_lp.access;
 
-
-
 /**
  * 
  * 	private 的使用规则
  *  构造器使用 private
  * 
  * @author liupeng
- *
+ * @version 1.0.0
  */
 public class IceCream {
 
