@@ -2,9 +2,10 @@ package com.lp.java1_6.initialization.ch5;
 
 
 /**
+ * 
  * 一个有参的简单构造器
  * @author liupeng
- *
+ * @version 1.0.0
  */
 public class SimpleConstructor2 {
 

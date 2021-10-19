@@ -3,7 +3,7 @@ package com.lp.java1_6.initialization.ch5;
 /** 
  * 可变参数列表
  * @author liupeng
- *
+ * @version 1.0.0
  */
 class A {}
 public class NewVarArgs {

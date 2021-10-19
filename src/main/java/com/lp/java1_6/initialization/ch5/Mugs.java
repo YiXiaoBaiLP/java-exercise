@@ -1,13 +1,11 @@
 package com.lp.java1_6.initialization.ch5;
 
-
 /**
  * 
  *  非静态实例的初始化。
  *  每次调用时都会被初始化一次.
- * 
  * @author liupeng
- *
+ * @version
  */
 public class Mugs {
 
@@ -39,7 +37,6 @@ public class Mugs {
 		new Mugs(1);
 		System.out.println("new Mugs(1) completed");
 	}
-
 }
 
 class Mug {

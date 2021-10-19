@@ -1,9 +1,9 @@
 package com.lp.java1_6.initialization.ch5;
 
 /**
- *  重载构造器和重载的方法，小例子。
+ * 重载构造器和重载的方法，小例子。
  * @author liupeng
- *
+ * @version 1.0.0
  */
 public class Overloading {
 	

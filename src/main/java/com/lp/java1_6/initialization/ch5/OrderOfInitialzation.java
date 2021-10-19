@@ -1,10 +1,10 @@
 package com.lp.java1_6.initialization.ch5;
 
 /**
- * 变量会在任何方法或构造器之前就进行初始化。
  * 
+ * 变量会在任何方法或构造器之前就进行初始化。
  * @author liupeng
- *
+ * @version 1.0.0
  */
 public class OrderOfInitialzation {
 
@@ -12,7 +12,6 @@ public class OrderOfInitialzation {
 		House h = new House();
 		h.f();
 	}
-
 }
 
 class Window {

@@ -3,10 +3,9 @@ package com.lp.java1_6.initialization.ch5;
 /**
  * 
  * 
- *  当传入的数据类型（实际参数类型）小于方法中声明的形式参数类型，实际参数类型就会被提升。
- * 
+ * 当传入的数据类型（实际参数类型）小于方法中声明的形式参数类型，实际参数类型就会被提升。
  * @author liupeng
- *
+ * @version 1.0.0
  */
 public class PrimitiveOverloading {
 

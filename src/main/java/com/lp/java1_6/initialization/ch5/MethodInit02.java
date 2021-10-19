@@ -1,9 +1,9 @@
 package com.lp.java1_6.initialization.ch5;
 
 /**
- * 	有参的方法也可以初始化一个变量，但前提参数必须有值。
- * @author admin
- *
+ * 有参的方法也可以初始化一个变量，但前提参数必须有值。
+ * @author liupeng
+ * @version
  */
 public class MethodInit02 {
 

@@ -2,11 +2,9 @@ package com.lp.java1_6.initialization.ch5;
 /**
  * 
  * 	创建一个数组,并初始化
- * 
  * 	数组是一个引用类型, 可以将一个数组的引用赋值给另一个变量.
  * 
  * @author liupeng
- *
  */
 public class ArrayOfPrimitives {
 
@@ -19,7 +17,6 @@ public class ArrayOfPrimitives {
 		a2 = a1;
 		// 将 a2 数组中的所有元素进行 +1
 		for(int i = 0; i < a2.length; i++) {
-			
 			a2[i] = a2[i] + 1;
 		}
 		// 打印出 a1 中的所有元素,此处与 a2 中 +1 后的值一样.

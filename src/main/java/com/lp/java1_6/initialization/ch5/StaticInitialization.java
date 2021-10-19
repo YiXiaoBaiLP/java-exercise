@@ -1,5 +1,11 @@
 package com.lp.java1_6.initialization.ch5;
 
+/**
+ * 
+ * 静态初始化
+ * @author yixiaobai
+ * @version 1.0.0
+ */
 public class StaticInitialization {
 
 	public static void main(String[] args) {
@@ -36,7 +42,6 @@ class Table {
 	void f2(int marker) {
 		System.out.println("f2(" + marker + ")");
 	}
-	
 	static Bowl bowl2 = new Bowl(2);
 }
 
@@ -48,7 +53,6 @@ class Cupboard {
 	
 	Cupboard() {
 		System.out.println("Cupboard()");
-		
 		bowl4.f1(2);
 	}
 	

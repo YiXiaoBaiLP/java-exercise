@@ -2,11 +2,10 @@ package com.lp.java1_6.initialization.ch5;
 
 /**
  *  参数顺序的不同也可以区分重载。
- *  
- *  	f()方法声明了相同的参数，但是顺序不同，因此得以区分。
+ *    f()方法声明了相同的参数，但是顺序不同，因此得以区分。
  * 
  * @author liupeng
- *
+ * @version 1.0.0
  */
 public class OverloadingOrder {
 

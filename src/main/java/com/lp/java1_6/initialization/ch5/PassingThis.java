@@ -3,9 +3,8 @@ package com.lp.java1_6.initialization.ch5;
 /***
  * 
  * 	使用this关键字类传递对象。
- * 
  * @author liupeng
- *
+ * @version 1.0.0
  */
 
 public class PassingThis {
@@ -14,7 +13,6 @@ public class PassingThis {
 		Apple apple = new Apple();
 		new Person().eat(apple);
 	}
-
 }
 
 @SuppressWarnings("unused")

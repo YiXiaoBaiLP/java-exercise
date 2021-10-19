@@ -2,10 +2,10 @@ package com.lp.java1_6.initialization.ch5;
 
 
 /***
- * 	一个带有构造器的简单类。
  * 
+ * 	一个带有构造器的简单类。
  * @author liupeng
- *
+ * @version 1.0.0
  */
 public class SimpleConstructor {
 	
