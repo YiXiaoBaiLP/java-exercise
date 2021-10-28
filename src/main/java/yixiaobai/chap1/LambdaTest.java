@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Predicate;
 
 /***
  *  初次使用Lambda表达式
@@ -45,8 +46,9 @@ public class LambdaTest {
 		// 输出结果是：0.8999999999999999
 		// 浮点类型无法正确的表示1/10的数值，应当使用BigDecimal类。
 		System.out.println(2.0-1.1);
-
-		String strJoin = String.join("s", "t", "r", "J", "o", "i", "n");
+		// 这里拼接后的字符串为：stsrsJsosisn
+		// 第一个参数为拼接的字符串，第二个往后的参数为需要拼接的字符串
+		String strJoin = String.join("String:", "t", "r", "J", "o", "i", "n");
 		System.out.println("strJoin 的值为：" + strJoin);
 		
 		// 获取当前的日期
@@ -56,7 +58,7 @@ public class LambdaTest {
 		List<String> oneList = filter(stringList, (String str) -> "ONE".equals(str));
 		System.out.println("oneList中的ONE元素：" + oneList.toString());
 		
-		List<Integer> intList = Arrays.asList(1,2,3,4,5,6,7,8,9,0);
+		List<Integer> intList = Arrays.asList(1,2,3,4,5,6,7,8,9,10);
 		
 		System.out.println("Integer List的长度为：" + intList.size());
 		// 使用Lambda表达式，获取Integer中大于5的元素。
@@ -64,8 +66,7 @@ public class LambdaTest {
 		System.out.println(integerList.toString());
 	}
 	
-	
-	public static <T> List<T> filter(List<T> list, Predicate<T> p) {
+	public static <T> List<T> filter(List<T> list, Predicate<T> p){
 		List<T> result = new ArrayList<>();
 		for(T e : list) {
 			if(p.test(e)) {
@@ -74,15 +75,4 @@ public class LambdaTest {
 		}
 		return result;
 	}
-
-}
-
-/**
- *  创建一个function接口
- * @author yixiaobai
- *
- * @param <T>
- */
-interface Predicate<T> {
-	boolean test(T t);
 }
