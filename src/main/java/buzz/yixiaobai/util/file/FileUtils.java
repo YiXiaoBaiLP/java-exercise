@@ -17,9 +17,9 @@ public class FileUtils {
 	}
 	
 	/**
-	 * 指定目录下查找文件
+	 * 指定目录下查找指定文件
 	 * @param filePath 文件路径
-	 * @param fileName 包含此字符串的文件
+	 * @param fileName 文件名称中包含此字符串的文件
 	 * @return 查找到的文件
 	 */
 	public static List<File> getAllFileInDir(String filePath, String fileName){
