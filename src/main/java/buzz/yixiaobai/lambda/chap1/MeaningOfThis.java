@@ -1,4 +1,4 @@
-package yixiaobai.chap1;
+package buzz.yixiaobai.lambda.chap1;
 
 /**	
  * 	匿名类的谜题

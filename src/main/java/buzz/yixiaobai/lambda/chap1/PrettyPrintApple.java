@@ -1,4 +1,4 @@
-package yixiaobai.chap1;
+package buzz.yixiaobai.lambda.chap1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,7 +10,6 @@ public class PrettyPrintApple {
 		List<Apple> inventory = Arrays.asList(new Apple(15, "Red"),
 										  new Apple(120, "Blue"),
 										  new Apple(50, "Greed"));
-		
 		
 		// 将接口的实现传递给方法
 		prettyPrintApple(inventory, new AppleSimpleFormatter());
@@ -28,6 +27,10 @@ public class PrettyPrintApple {
 		});
 		
 		// 使用Java8 的Lambda方式
+		prettyPrintApple(inventory, (Apple a) -> {
+			System.out.println("我是什么颜色的苹果？" + a.getColor());
+			return a.getColor();
+		});
 		
 	}
 
@@ -38,7 +41,6 @@ public class PrettyPrintApple {
 			System.out.println(output);
 		}
 	}
-	
 	
 	/**
 	 * 	此方法可以传入任意类型的List集合 	
@@ -56,7 +58,6 @@ public class PrettyPrintApple {
 		}
 		return result;
 	}
-	
 }
 
 /**
@@ -95,10 +96,8 @@ class AppleSimpleFormatter implements AppleFormatter {
 	}
 }
 
-
 /**
- * 	一个Aplle的实体类
- * 
+ * 一个Apple实体类	
  * @author yixiaobai
  *
  */

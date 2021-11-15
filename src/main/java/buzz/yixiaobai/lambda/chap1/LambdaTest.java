@@ -1,4 +1,4 @@
-package yixiaobai.chap1;
+package buzz.yixiaobai.lambda.chap1;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

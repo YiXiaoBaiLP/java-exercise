@@ -1,4 +1,4 @@
-package FileIsHidden;
+package buzz.yixiaobai.lambda.FileIsHidden;
 
 import java.io.File;
 import java.io.FileFilter;
