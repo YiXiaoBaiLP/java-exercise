@@ -1,4 +1,4 @@
-package ConstructorTest;
+package buzz.yixiaobai.ConstructorTest;
 
 import java.util.Random;
 

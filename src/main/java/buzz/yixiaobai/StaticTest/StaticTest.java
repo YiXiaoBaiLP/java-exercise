@@ -1,5 +1,10 @@
-package StaticTest;
+package buzz.yixiaobai.StaticTest;
 
+/**
+ * 静态类测试
+ * @author yixiaobai
+ *
+ */
 public class StaticTest {
 
 	public static void main(String[] args) {
