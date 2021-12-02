@@ -6,23 +6,17 @@
   <artifactId>java8-exercise</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-
   <name>java8-exercise</name>
   <url>http://maven.apache.org</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <!-- JDK 的版本 -->
-    <java.version>11</java.version>
-  </properties>
   
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
+      <!-- https://mvnrepository.com/artifact/junit/junit -->
+      <dependency>
+          <groupId>junit</groupId>
+          <artifactId>junit</artifactId>
+          <version>4.12</version>
+          <scope>test</scope>
+      </dependency>
   </dependencies>
 
 	<build>
@@ -32,8 +26,8 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
 					<!-- 指定JDK版本 -->
-					<source>${java.version}</source>
-					<target>${java.version}</target>
+					<source>11</source>
+                    <target>11</target>
 					<!-- 设置编码环境 -->
 					<encoding>UTF-8</encoding>
 				</configuration>

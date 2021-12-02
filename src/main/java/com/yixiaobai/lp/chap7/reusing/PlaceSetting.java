@@ -16,7 +16,7 @@ public class PlaceSetting extends Custom {
 		sp = new Spoon(i + 2);
 		frk = new Fork(i + 3);
 		kn = new Knife(i + 4);
-		pl = new DinnerPlate(i +５);
+		pl = new DinnerPlate(i + 5);
 		System.out.println("PlaceSetting constructor");
 	}
 	
@@ -34,7 +34,7 @@ class Plate {
 }
 
 class DinnerPlate extends Plate {
-	public DinnerPlate(int i ) {
+	public DinnerPlate(int i) {
 		// 使用super可以调用基类的有参构造器
 		super(i);
 		System.out.println("DinnerPate constrctor");

@@ -1,8 +1,8 @@
 package com.yixiaobai.lp.chap5.reflection;
 
-import java.util.Random;
-
 import org.junit.Test;
+
+import java.util.Random;
 
 /**
  * 获取class的几种方式

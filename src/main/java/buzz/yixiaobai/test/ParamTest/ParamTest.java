@@ -1,4 +1,4 @@
-package	ParamTest;
+package	buzz.yixiaobai.test.ParamTest;
 
 public class ParamTest {
 	public static void main(String[] args) {
@@ -83,4 +83,3 @@ class Employee {
 		salary += raise;
 	}
 }
-
