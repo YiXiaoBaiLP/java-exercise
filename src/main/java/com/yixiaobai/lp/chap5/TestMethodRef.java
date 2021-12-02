@@ -1,11 +1,11 @@
 package com.yixiaobai.lp.chap5;
 
+import org.junit.Test;
+
 import java.util.Comparator;
 import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
 import java.util.function.Consumer;
-
-import org.junit.Test;
 
 /*
  * 一、方法引用：若Lambda体中的内容有方法已经实现了，我们可以使用“方法引用”

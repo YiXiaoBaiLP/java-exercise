@@ -1,10 +1,11 @@
 package com.yixiaobai.lp.chap3;
 
+import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.junit.Test;
 
 /*
  * 1. 调用Collections.sort()方法，通过定制排序比较两个Employee（先用年龄比， 年龄相同按姓名比） 使用Lambda作为参数传递

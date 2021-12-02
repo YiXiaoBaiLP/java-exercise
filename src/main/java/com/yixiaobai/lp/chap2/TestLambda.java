@@ -1,5 +1,8 @@
 package com.yixiaobai.lp.chap2;
 
+
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -7,7 +10,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
 
-import org.junit.Test;
 
 /*
  * 一、Lambda表达式的基础语法：Java8中引入了一个新的操作符“->” 该操作符称为箭头操作符或Lambda操作符

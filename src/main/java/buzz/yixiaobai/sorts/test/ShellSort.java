@@ -1,16 +1,12 @@
 package buzz.yixiaobai.sorts.test;
 
-import org.junit.Test;
-
 /**
  * 希尔排序
  * @author yixiaobai
  *
  */
 public class ShellSort {
-
-	@Test
-	public void test() {
+	public static void main(String[] args) {
 		
 		int[] nums = {49, 38, 65, 97, 76, 
 				13, 27, 49, 78, 34, 12, 64, 1 };

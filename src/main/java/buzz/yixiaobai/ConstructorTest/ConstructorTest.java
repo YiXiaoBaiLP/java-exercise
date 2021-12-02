@@ -51,7 +51,6 @@ class Employee {
 	/*
 	 * 	object initialization block
 	 * 	初始化域
-	 * 
 	 */
 	{
 		id = nextId;

@@ -1,5 +1,7 @@
 package com.yixiaobai.lp.chap4;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +10,6 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 
-import org.junit.Test;
 
 /**
  *  Java8 内置的四大函数型接口
