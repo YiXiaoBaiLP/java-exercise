@@ -40,15 +40,15 @@ public class TestLambda {
 	@Test
 	public void test02() {
 		// 给字符串去掉首尾空格
-		String str02 = strHandler("\t\t\t\t\t Lambda牛逼", (str) -> str.trim());
+		String str02 = strHandler("\t\t\t\t\t Lambda牛逼", str -> str.trim());
 		System.out.println(str02);
 		
 		// 将字符串转换成大写
-		String upper = strHandler("abcde", (str) -> str.toUpperCase());
+		String upper = strHandler("abcde", str -> str.toUpperCase());
 		System.out.println(upper);
 		
 		// 截取字符串
-		String sub = strHandler("Java威武123123123", (str) -> str.substring(2, 7));
+		String sub = strHandler("Java威武123123123", str -> str.substring(2, 7));
 		System.out.println(sub);
 	}
 	

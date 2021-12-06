@@ -18,7 +18,7 @@ public class IceCream {
 		if(sun == null) {
 			System.out.println("sun对象创建失败！！！");
 		}else {
-			System.out.println("sun对象创建成功，值为：" + sun);
+			System.out.println("sun对象创建成功，值为：" + sun.hashCode());
 		}
 	}
 }
