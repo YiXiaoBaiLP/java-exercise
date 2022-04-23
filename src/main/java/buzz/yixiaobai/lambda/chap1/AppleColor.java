@@ -6,6 +6,5 @@ package buzz.yixiaobai.lambda.chap1;
  *
  */
 public enum AppleColor {
-
 	RED,GREEN;
 }
