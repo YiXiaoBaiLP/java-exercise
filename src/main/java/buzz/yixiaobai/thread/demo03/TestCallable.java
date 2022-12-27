@@ -45,9 +45,7 @@ public class TestCallable implements Callable {
             boolean rs01 = result01.get();
             boolean rs02 = result02.get();
             boolean re03 = result03.get();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (ExecutionException e) {
+        } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
         ser.shutdownNow();

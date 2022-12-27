@@ -21,7 +21,7 @@ public class CreateThread {
         // 向线程发送中断请求
         thread.interrupt();
         // 查看当前的线程会否被中断
-        Boolean isInterrup = thread.isInterrupted();
+        boolean isInterrup = thread.isInterrupted();
         System.out.println("当前线程是否被中断：" + isInterrup);
         thread.start();
         Thread.State threadState2 = thread.getState();
