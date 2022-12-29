@@ -85,4 +85,29 @@ public class CreateStreamDemo {
             e.printStackTrace();
         }
     }
+
+    /**
+     * 创建一个无限流
+     */
+    @Test
+    public void createIterateStream() {
+        // 通过Stream.iterate()方法创建一个无限流
+        Stream.iterate(0, n -> n + 2)
+                .limit(100L)
+                .forEach(System.out::println);
+
+        Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]})
+                .limit(20L)
+                .forEach(t -> System.out.println("(" + t[0] + ", " + t[1] + ") "));
+
+        Stream.iterate(new int[]{0, 1}, t -> new int[]{t[1], t[0] + t[1]})
+                .limit(10L)
+                .map(t -> t[0])
+                .forEach(System.out::println);
+        System.out.println("--------------------------------------------------------");
+        // Java 9支持的语法
+        // 第一个参数是开始值，第二个是表示什么时候停止，第三个表示每次增加多少
+        Stream.iterate(0, x -> x < 100, x -> x + 2)
+                .forEach(System.out::println);
+    }
 }
