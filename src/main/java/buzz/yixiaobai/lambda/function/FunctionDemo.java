@@ -23,6 +23,14 @@ public class FunctionDemo {
                 .forEach(System.out::println);
     }
 
+    /**
+     * 获取集合中每个元素的长度
+     * @param list 集合
+     * @param f 函数方法
+     * @param <T> 集合中的类型
+     * @param <R> 返回值类型
+     * @return
+     */
     public <T, R> List<R> map(List<T> list, Function<T, R> f){
         List<R> result = new ArrayList<>();
         for(T t : list){
