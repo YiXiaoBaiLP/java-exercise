@@ -7,6 +7,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Arrays;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -88,6 +89,7 @@ public class CreateStreamDemo {
 
     /**
      * 创建一个无限流
+     * 使用无限流
      */
     @Test
     public void createIterateStream() {
@@ -109,5 +111,47 @@ public class CreateStreamDemo {
         // 第一个参数是开始值，第二个是表示什么时候停止，第三个表示每次增加多少
         Stream.iterate(0, x -> x < 100, x -> x + 2)
                 .forEach(System.out::println);
+    }
+
+    /**
+     * 使用无限流
+     * 输出偶数列表，输出的结果小于100
+     * 此方法会造成死循环
+     */
+    @Test
+    public void createIterateStream02() {
+        // 此代码根本无法停止
+        // filter()会等待iterate()方法执行完成
+        // 所以iterate()是个无穷操作，此方法根本无法停止，filter()不会被执行
+        IntStream.iterate(0, n -> n + 4)
+                .filter(n -> n < 100)
+                .forEach(System.out::println);
+    }
+
+    /**
+     * 使用无限流
+     * 输出偶数列表，输出的结果小于100
+     * 可以正常的输出
+     */
+    @Test
+    public void createIterateStream03() {
+        // Java9 支持的语法
+        // 第一个参数是开始值，第二个参数表示什么时候停止，第三个参数表示每次增加多少
+        Stream.iterate(0, x -> x < 100, x -> x + 2)
+                .forEach(System.out::println);
+    }
+
+    /**
+     * 使用无限流
+     * 输出偶数列表，输出的结果小于100
+     * 正常输出
+     */
+    @Test
+    public void createIterateStream04() {
+        IntStream.iterate(0, x -> x + 2)
+                // Java 9 的方法
+                .takeWhile(x -> x < 100)
+                .forEach(System.out::println);
+
     }
 }
