@@ -34,7 +34,7 @@ class Employee {
 	private static int nextId;
 	
 	private int id;
-	private String name = ""; // instance field initalization
+	private String name = ""; // instance field initialization
 	private double salary;
 	
 	/*
