@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 
 /**
  * 使用reducing（归约）
- */
+ */ 
 public class Reducing {
 
     @Test

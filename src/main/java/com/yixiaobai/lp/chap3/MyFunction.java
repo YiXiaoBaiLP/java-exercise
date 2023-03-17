@@ -8,5 +8,5 @@ package com.yixiaobai.lp.chap3;
 @FunctionalInterface
 public interface MyFunction {
 
-	public String getValue(String str);
+	String getValue(String str);
 }

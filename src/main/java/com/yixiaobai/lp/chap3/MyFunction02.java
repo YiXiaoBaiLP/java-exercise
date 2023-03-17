@@ -9,5 +9,5 @@ package com.yixiaobai.lp.chap3;
 @FunctionalInterface
 public interface MyFunction02<T, R> {
 
-	public R getValue(T t1, T t2);
+	R getValue(T t1, T t2);
 }

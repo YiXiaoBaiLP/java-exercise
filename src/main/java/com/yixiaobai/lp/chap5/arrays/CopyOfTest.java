@@ -47,13 +47,13 @@ public class CopyOfTest {
 	 */
 	public static Object goodCopyOf(Object a, int newLength) {
 		
-		Class  cl = a.getClass();
+		Class<?> cl = a.getClass();
 		// 判断此类型是否是一个集合类型
 		if(!cl.isArray()) {
 			return null;
 		}
 	    // 获取具体的参数类型
-		Class componentType = cl.getComponentType();
+		Class<?> componentType = cl.getComponentType();
 	    // 获取集合的长度
 		int length = Array.getLength(a);
 		Object newArray = Array.newInstance(componentType, newLength);
